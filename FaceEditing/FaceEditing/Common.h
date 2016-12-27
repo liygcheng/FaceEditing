@@ -7,6 +7,13 @@
 #include<cstdio>
 #include<opencv2\highgui\highgui.hpp>
 #include<opencv2\core\core.hpp>
+#include<fstream>
+#include<istream>
+#include<ostream>
+
+
+
+
 
 
 #endif

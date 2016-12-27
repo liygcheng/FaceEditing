@@ -39,7 +39,7 @@
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="FaceTracker">
-      <UniqueIdentifier>{3d9f943a-d44e-4d9f-87d4-5f6e270c54ca}</UniqueIdentifier>
+      <UniqueIdentifier>{389f4804-be31-4d13-8963-970d86bd63c4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

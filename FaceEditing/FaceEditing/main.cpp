@@ -1,7 +1,9 @@
 #include "FaceEditing.h"
-//#include <QtWidgets/QApplication>
+#include <QtWidgets/QApplication>
 
 #include"FaceTracker.h"
+
+#include"Serializer.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,9 +13,12 @@ int main(int argc, char *argv[])
 	//w.show();
 	//return a.exec();
 
-	clc_FaceTracker* m_tracker = new clc_FaceTracker();
+	//clc_FaceTracker* m_tracker = new clc_FaceTracker();
 
 	//m_tracker->CameraTracker();
+
+
+	system("pause");
 
 	return 0;
 

@@ -24,7 +24,6 @@ public:
 	void CameraTracker(void);
 
 
-
 private:
 	cv::Mat m_frame, m_gray;
 
@@ -43,16 +42,14 @@ void clc_FaceTracker::CameraTracker(void){
 
 	bool failed = true; int fnum = 0; double fps = 0; char sss[256]; std::string text;
 	int64 t1, t0 = cv::getTickCount(); int fpd = -1;
-	float scale = 0.5;
+	float scale = 1;
 
 	if (m_camera != NULL && m_camera->isOpened())
 	{
 		while (!m_stop)
 		{
-			//m_camera->read(m_frame);
-			(*m_camera) >> m_frame;
+			m_camera->read(m_frame);
 		
-
 			cv::resize(m_frame, m_frame, cv::Size(scale*m_frame.cols, scale*m_frame.rows));
 			cv::flip(m_frame, m_frame, 1);
 			cv::cvtColor(m_frame, m_gray, CV_BGR2GRAY);
@@ -92,7 +89,7 @@ void clc_FaceTracker::CameraTracker(void){
 			//cv::putText(m_frame, text, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(255, 255, 255));
 
 			cv::imshow("Face Tracker", m_frame);
-			int c = cv::waitKey(20);
+			int c = cv::waitKey(10);
 			if (c == 27) m_stop = true;
 			else
 			{
@@ -145,3 +142,4 @@ void clc_FaceTracker::Draw(cv::Mat &image, cv::Mat &shape, cv::Mat &con, cv::Mat
 
 }
 #endif
+

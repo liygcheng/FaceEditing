@@ -1,3 +1,5 @@
 VS 2013
 Qt 5.7.0
 Opencv3.10
+FaceTracker
+cereal
