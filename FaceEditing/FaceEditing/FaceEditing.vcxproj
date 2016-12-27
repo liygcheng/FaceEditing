@@ -108,7 +108,11 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="FaceTracker.h" />
     <ClInclude Include="GeneratedFiles\ui_FaceEditing.h" />
+    <ClInclude Include="Serializer.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="FaceEditing.qrc">

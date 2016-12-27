@@ -3,6 +3,8 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_FaceEditing.h"
 
+#include"Element.h"
+
 class FaceEditing : public QMainWindow
 {
     Q_OBJECT

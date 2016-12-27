@@ -25,9 +25,9 @@ QT_BEGIN_NAMESPACE
 class Ui_FaceEditingClass
 {
 public:
+    QWidget *centralWidget;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
-    QWidget *centralWidget;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *FaceEditingClass)
@@ -35,15 +35,16 @@ public:
         if (FaceEditingClass->objectName().isEmpty())
             FaceEditingClass->setObjectName(QStringLiteral("FaceEditingClass"));
         FaceEditingClass->resize(600, 400);
-        menuBar = new QMenuBar(FaceEditingClass);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        FaceEditingClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(FaceEditingClass);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        FaceEditingClass->addToolBar(mainToolBar);
         centralWidget = new QWidget(FaceEditingClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         FaceEditingClass->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(FaceEditingClass);
+        menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 600, 21));
+        FaceEditingClass->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(FaceEditingClass);
+        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
+        FaceEditingClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(FaceEditingClass);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         FaceEditingClass->setStatusBar(statusBar);
