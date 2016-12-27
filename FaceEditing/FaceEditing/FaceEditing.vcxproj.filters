@@ -38,6 +38,9 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="FaceTracker">
+      <UniqueIdentifier>{3d9f943a-d44e-4d9f-87d4-5f6e270c54ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,30 @@
     </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_FaceEditing.cpp">
       <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\CLM.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\FCheck.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\FDet.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\IO.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\Patch.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\PAW.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\PDM.cc">
+      <Filter>FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\include\FaceTracker\Tracker.cc">
+      <Filter>FaceTracker</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +109,30 @@
     </ClInclude>
     <ClInclude Include="FaceTracker.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\CLM.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\FCheck.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\FDet.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\IO.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\Patch.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\PAW.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\PDM.h">
+      <Filter>FaceTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker\include\FaceTracker\Tracker.h">
+      <Filter>FaceTracker</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
